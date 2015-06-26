@@ -14,7 +14,7 @@ output_file = open(output_filename, 'w')
 input_line = input_file.readline()
 while input_line:
     line = ''
-    if input_line.find('-') >= 0 :
+    if input_line.startswith('-'):
         input_line = input_file.readline()
         continue
     elif len(input_line) == 0:
